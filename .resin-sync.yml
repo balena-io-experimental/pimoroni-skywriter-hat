@@ -1,0 +1,12 @@
+local_resinos:
+  app-name: skywriter-hat
+  build-triggers:
+    - Dockerfile: 44e0d6f2e81dbc7065e8f2d4b8160842568ec748c9c431e8a88f040e3704f672
+    - requirements.txt: dace94a51fa9dcecad9b4ba6699e676947413cea8c0f43c2301f42d8255b9f35
+  environment:
+    - RESIN_vars=There Are None for resinOS Unmanaged
+destination: /usr/src/app
+ignore:
+  - .git
+  - node_modules/
+  - Dockerfile
